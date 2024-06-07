@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="header">
+        <h1>Rock Paper Scissors</h1>
+    </div>
+    <div class="wrapper">
+        <div class="container">
+            <div class="rock-wrapper">
+                    
+                    <button class="rpsButton" onclick="playGame('rock')">✊</button>
+                    
+                    <div class="rock">rock</div>
+            </div>
+            <div class="paper-wrapper">
+                    
+                    <button class="rpsButton" onclick="playGame('paper')">🤚</button>
+                    
+                    <div class="paper">paper</div>
+            </div>
+            <div class="scissors-wrapper">
+                    
+                    <button class="rpsButton" onclick="playGame('scissors')">✌</button>
+                    
+                    <div class="scissors">scissors</div>
+            </div>
+        </div>
+        <div class="result-container">
+            <div class="player-wrapper"> 
+                <h2> Player-score</h2>
+                <div id="player-score" > 0 </div>
+
+            </div>
+            <div class="computer-wrapper">
+                <h2> Computer-score</h2>
+                <div id="computer-score">0 </div>
+            </div>
+            
+           
+        </div>
+        <div id="result"> 
+            RESULT: 
+            </div> 
+        <button id='endGameButton' onclick="endGame()">🔴</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
